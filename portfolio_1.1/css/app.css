@@ -1,0 +1,151 @@
+body {
+  font-family: "Montserrat"
+}
+
+a {
+  font-weight: 300;
+  color: white;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+.portfolio img {
+  width: 50%;
+}
+
+.summaryhead {
+  font-weight: 600;
+}
+
+.summary {
+  background-color: #f4623a;
+  color: white;
+  font-weight: 200;
+}
+
+.svg-inline--fa.fa-w-16 {
+  color: #f4623a;
+}
+
+button:focus {
+  outline: none;
+  outline: none;
+}
+
+.jumbotext {
+  font-weight: 600;
+  color: white;
+}
+
+.jumbofoottext {
+  color: white;
+  font-weight: 200;
+}
+
+.jumbobtn {
+  background-color: #f4623a;
+  border-color: #f4623a;
+}
+
+.jumbobtn:hover {
+  background-color: #f4623a;
+  border-color: #f4623a;
+}
+
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: #f4623a;
+}
+
+a:hover {
+  color: #f4623a;
+}
+
+#re {
+  color: #f4623a;
+  padding: 0;
+}
+
+#re.scrolled {
+  color: black;
+}
+
+.navbar.scrolled {
+  background: #f4623a;
+  transition: background 500ms;
+}
+
+.navbar.scrolled a:hover {
+  color: black;
+}
+
+header.masthead {
+  padding-top: 10rem;
+  padding-bottom: calc(10rem - 4.5rem);
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/mydesk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+header.masthead h1 {
+  font-size: 2.25rem;
+}
+
+@media (min-width: 992px) {
+  header.masthead {
+    height: 100vh;
+    min-height: 40rem;
+    padding-top: 4.5rem;
+    padding-bottom: 0;
+  }
+
+  header.masthead p {
+    font-size: 1.15rem;
+  }
+
+  header.masthead h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  header.masthead h1 {
+    font-size: 3.5rem;
+  }
+}
